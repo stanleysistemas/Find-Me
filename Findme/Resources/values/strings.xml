@@ -8,4 +8,5 @@
   <string name="fragment2">You are on Fragment 2</string>
   <string name="login_facebook">Login with Facebook</string>
   <string name="login_twitter">Login with Twitter</string>
+  <string name="login_microsoft">Login with Email</string>
 </resources>

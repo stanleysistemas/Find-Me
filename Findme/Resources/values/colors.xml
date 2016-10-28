@@ -23,4 +23,5 @@
   <!--Buttons-->
   <color name="button_facebook">#282E8C</color>
   <color name="button_twitter">#1B92F2</color>
+  <color name="button_microsoft">#376897</color>
 </resources>

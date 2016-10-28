@@ -12,7 +12,7 @@ using Android.Widget;
 
 namespace Findme.Activities
 {
-    [Activity(Label = "FindMe", Theme = "@style/SplashTheme", MainLauncher = true)]
+    [Activity(Label = "FindMe", Theme = "@style/SplashTheme", NoHistory = true, MainLauncher = true)]
     public class SplashActivity : Activity
     {
         protected override void OnCreate(Bundle savedInstanceState)
@@ -37,12 +37,12 @@ namespace Findme.Activities
             //   Settings.Current.FirstRun = false;
             //}
             //else
-            newIntent = new Intent(this, typeof(MainActivity));
+            newIntent = new Intent(this, typeof(LoginActivity));
 
-            newIntent.AddFlags(ActivityFlags.ClearTop);
-            newIntent.AddFlags(ActivityFlags.SingleTop);
+           // newIntent.AddFlags(ActivityFlags.ClearTop);
+           // newIntent.AddFlags(ActivityFlags.SingleTop);
             StartActivity(newIntent);
-            Finish();
+           // Finish();
         }
     }
 }

@@ -65,10 +65,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Activities\LoginActivity.cs" />
     <Compile Include="Activities\MainActivity.cs" />
     <Compile Include="Activities\SplashActivity.cs" />
     <Compile Include="Fragments\Fragment1.cs" />
     <Compile Include="Fragments\Fragment2.cs" />
+    <Compile Include="Helpers\DistanceUtils.cs" />
     <Compile Include="Helpers\Settings.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -224,6 +226,7 @@
     <AndroidResource Include="Resources\drawable-xxxhdpi\menu_settings.png" />
     <AndroidResource Include="Resources\drawable\background_started.png" />
     <AndroidResource Include="Resources\drawable\face_big.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_windows.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
@@ -233,5 +236,7 @@
   <Target Name="AfterBuild">
   </Target>
   -->
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Model\" />
+  </ItemGroup>
 </Project>
