@@ -13,7 +13,7 @@ using Android.Support.Design.Widget;
 
 namespace Findme.Activities
 {
-    [Activity(Label = "Home", MainLauncher = true, LaunchMode = LaunchMode.SingleTop, Icon = "@drawable/Icon")]
+    [Activity(Label = "FindMe", LaunchMode = LaunchMode.SingleTop, Icon = "@drawable/face")]
     public class MainActivity : BaseActivity
     {
 
@@ -48,10 +48,10 @@ namespace Findme.Activities
 
                 switch (e.MenuItem.ItemId)
                 {
-                    case Resource.Id.nav_home_1:
+                    case Resource.Id.nav_map:
                         ListItemClicked(0);
                         break;
-                    case Resource.Id.nav_home_2:
+                    case Resource.Id.nav_checkin:
                         ListItemClicked(1);
                         break;
                 }

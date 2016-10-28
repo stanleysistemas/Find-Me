@@ -66,8 +66,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Activities\MainActivity.cs" />
+    <Compile Include="Activities\SplashActivity.cs" />
     <Compile Include="Fragments\Fragment1.cs" />
     <Compile Include="Fragments\Fragment2.cs" />
+    <Compile Include="Helpers\Settings.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Activities\BaseActivity.cs" />
@@ -85,12 +87,17 @@
     <AndroidResource Include="Resources\layout\nav_header.axml">
       <SubType>AndroidResource</SubType>
     </AndroidResource>
+    <AndroidResource Include="Resources\layout\login.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Properties\AndroidManifest.xml">
       <SubType>Designer</SubType>
     </Content>
-    <AndroidResource Include="Resources\values\colors.xml" />
+    <AndroidResource Include="Resources\values\colors.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
     <AndroidResource Include="Resources\values\integers.xml" />
     <AndroidResource Include="Resources\values\strings.xml" />
     <AndroidResource Include="Resources\values\styles.xml">
@@ -118,6 +125,105 @@
     <AndroidResource Include="Resources\drawable-mdpi\ic_menu.png" />
     <AndroidResource Include="Resources\drawable-xhdpi\ic_menu.png" />
     <AndroidResource Include="Resources\drawable-xxhdpi\ic_menu.png" />
+    <AndroidResource Include="Resources\drawable\face.png" />
+    <AndroidResource Include="Resources\drawable\header_4.jpg" />
+    <AndroidResource Include="Resources\drawable\header_5.png" />
+    <AndroidResource Include="Resources\drawable\header_blue.png" />
+    <AndroidResource Include="Resources\drawable\header_city.jpg" />
+    <AndroidResource Include="Resources\drawable\header1.jpg" />
+    <AndroidResource Include="Resources\drawable\header2.jpg" />
+    <AndroidResource Include="Resources\drawable\header3.jpg" />
+    <AndroidResource Include="Resources\drawable\heroplaceholder.png" />
+    <AndroidResource Include="Resources\drawable\ic_evals.png" />
+    <AndroidResource Include="Resources\drawable\ic_facebook.png" />
+    <AndroidResource Include="Resources\drawable\ic_home_1.png" />
+    <AndroidResource Include="Resources\drawable\ic_home_2.png" />
+    <AndroidResource Include="Resources\drawable\ic_map_black_18dp.png" />
+    <AndroidResource Include="Resources\drawable\ic_menu.png" />
+    <AndroidResource Include="Resources\drawable\ic_twitter.png" />
+    <AndroidResource Include="Resources\drawable\ic_windows.png" />
+    <AndroidResource Include="Resources\drawable\icon_blog.png" />
+    <AndroidResource Include="Resources\drawable\icon_linkedin.png" />
+    <AndroidResource Include="Resources\drawable\icon_twitter.png" />
+    <AndroidResource Include="Resources\drawable\icon_website.png" />
+    <AndroidResource Include="Resources\drawable\menu_current_trip.png" />
+    <AndroidResource Include="Resources\drawable\menu_events.png" />
+    <AndroidResource Include="Resources\drawable\menu_feed.png" />
+    <AndroidResource Include="Resources\drawable\menu_hacks.png" />
+    <AndroidResource Include="Resources\drawable\menu_info.png" />
+    <AndroidResource Include="Resources\drawable\menu_plan.png" />
+    <AndroidResource Include="Resources\drawable\menu_profile.png" />
+    <AndroidResource Include="Resources\drawable\menu_sessions.png" />
+    <AndroidResource Include="Resources\drawable\menu_settings.png" />
+    <AndroidResource Include="Resources\drawable\menu_sponsors.png" />
+    <AndroidResource Include="Resources\drawable\menu_venue.png" />
+    <AndroidResource Include="Resources\drawable\profile_generic.png" />
+    <AndroidResource Include="Resources\drawable\profile_generic_big.png" />
+    <AndroidResource Include="Resources\drawable\SplashScreen.png" />
+    <AndroidResource Include="Resources\drawable\tecno.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\face.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\header_4.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\header_5.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\header_blue.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\header_city.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\header1.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\header2.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\header3.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\heroplaceholder.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_evals.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_map_black_18dp.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\icon_blog.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\icon_linkedin.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\icon_twitter.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\icon_website.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\menu_events.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\menu_feed.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\menu_hacks.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\menu_info.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\menu_plan.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\menu_sessions.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\menu_settings.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\menu_sponsors.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\menu_venue.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\profile_generic.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\profile_generic_big.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\SplashScreen.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\tecno.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_facebook.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_twitter.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\menu_current_trip.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\menu_past_trips.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\menu_profile.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_facebook.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_twitter.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_windows.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\menu_current_trip.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\menu_past_trips.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\menu_profile.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\menu_settings.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_facebook.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_twitter.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_windows.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\menu_current_trip.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\menu_past_trips.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\menu_profile.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\menu_settings.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_facebook.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_twitter.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_windows.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\menu_current_trip.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\menu_past_trips.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\menu_profile.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\menu_settings.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_facebook.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_twitter.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_windows.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\menu_current_trip.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\menu_past_trips.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\menu_profile.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\menu_settings.png" />
+    <AndroidResource Include="Resources\drawable\background_started.png" />
+    <AndroidResource Include="Resources\drawable\face_big.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

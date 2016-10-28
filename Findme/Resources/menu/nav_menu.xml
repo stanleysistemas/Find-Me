@@ -3,16 +3,36 @@
 
   <group android:checkableBehavior="single">
     <item
-        android:id="@+id/nav_home_1"
-        android:icon="@drawable/ic_home_1"
-        android:title="Home 1" />
+        android:id="@+id/nav_map"
+        android:icon="@drawable/menu_plan"
+        android:title="Mapas" />
     <item
-        android:id="@+id/nav_home_2"
-        android:icon="@drawable/ic_home_2"
-        android:title="Home 2" />
+        android:id="@+id/nav_checkin"
+        android:icon="@drawable/menu_venue"
+        android:title="Check In" />
+    <item
+        android:id="@+id/nav_historico_map"
+        android:icon="@drawable/icon_website"
+        android:title="Histórico de Localizações" />
+  </group>
+   <group android:checkableBehavior="single">
+    <item
+        android:id="@+id/nav_conversa"
+        android:icon="@drawable/menu_sponsors"
+        android:title="Conversa" />
+    <item
+        android:id="@+id/nav_notifica"
+        android:icon="@drawable/menu_feed"
+        android:title="Notificações" />
+    <item
+        android:id="@+id/nav_configura"
+        android:icon="@drawable/menu_settings"
+        android:title="Configurações" />
   </group>
 
-  <item android:title="Sub items">
+  
+
+  <!--<item android:title="Sub items">
     <menu>
       <item
           android:icon="@drawable/ic_home_1"
@@ -21,6 +41,6 @@
           android:icon="@drawable/ic_home_2"
           android:title="Sub item 2" />
     </menu>
-  </item>
+  </item>-->
 
 </menu>

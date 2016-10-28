@@ -6,4 +6,6 @@
   <string name="menu_refresh">Refresh</string>
   <string name="fragment1">You are on Fragment 1</string>
   <string name="fragment2">You are on Fragment 2</string>
+  <string name="login_facebook">Login with Facebook</string>
+  <string name="login_twitter">Login with Twitter</string>
 </resources>
