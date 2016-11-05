@@ -78,7 +78,7 @@
             <Button
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"
-                android:text="Skip Auth"
+                android:text="Registrar"
                 android:id="@+id/button_skip"
                 android:paddingLeft="24dp"
                 android:paddingRight="24dp" />

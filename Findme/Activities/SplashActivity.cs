@@ -12,7 +12,7 @@ using Android.Widget;
 
 namespace Findme.Activities
 {
-    [Activity(Label = "FindMe", Theme = "@style/SplashTheme", NoHistory = true, MainLauncher = true)]
+    [Activity(Label = "FindMe", Theme = "@style/SplashTheme", NoHistory = true)]
     public class SplashActivity : Activity
     {
         protected override void OnCreate(Bundle savedInstanceState)

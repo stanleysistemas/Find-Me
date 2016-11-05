@@ -1,14 +1,6 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
 using Android.App;
 using Android.Content;
-using Android.Content.PM;
 using Android.OS;
-using Android.Runtime;
-using Android.Views;
 using Android.Widget;
 
 namespace Findme.Activities
@@ -35,7 +27,7 @@ public class LoginActivity : BaseActivity
             Intent newIntent;
 
             var twitter = FindViewById<Button>(Resource.Id.button_twitter);
-            var microsoft = FindViewById<Button>(Resource.Id.button_skip);
+            var microsoft = FindViewById<Button>(Resource.Id.button_microsoft);
             var facebook = FindViewById<Button>(Resource.Id.button_facebook);
             var skip = FindViewById<Button>(Resource.Id.button_skip);
             
@@ -44,10 +36,19 @@ public class LoginActivity : BaseActivity
             //  microsoft.Click += (sender, e) => Login(LoginAccount.Windows);
 
 
+            FindViewById<Button>(Resource.Id.button_microsoft).Click += (sender, e) =>
+            {
+                newIntent = new Intent(this, typeof(LogarActivity));
+               // newIntent.AddFlags(ActivityFlags.ClearTop);
+                newIntent.AddFlags(ActivityFlags.SingleTop);
+                StartActivity(newIntent);
+                Finish();
+            };
+
             FindViewById<Button>(Resource.Id.button_skip).Click += (sender, e) =>
             {
-                newIntent = new Intent(this, typeof(MainActivity));
-                newIntent.AddFlags(ActivityFlags.ClearTop);
+                newIntent = new Intent(this, typeof(RegistroActivity));
+               // newIntent.AddFlags(ActivityFlags.ClearTop);
                 newIntent.AddFlags(ActivityFlags.SingleTop);
                 StartActivity(newIntent);
                 Finish();
